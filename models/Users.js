@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const schema = mongoose.schema;
+const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
   name:{
@@ -15,7 +15,7 @@ const UserSchema = new Schema({
     required: true
   },
   avatar: {
-    type:string,
+    type: String,
     required: false
   },
   date: {
