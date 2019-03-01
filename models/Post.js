@@ -4,12 +4,12 @@ const Schema = mongoose.Schema;
 //create Schema
 const PostSchema = new Schema({
   user: {
-    type: Schemaa.Type.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'users'
   },
   text: {
     type: String,
-    required = true
+    required: true
   },
   name: {
     type: String
